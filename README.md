@@ -1,6 +1,12 @@
-# distance
+# Distance Metric Learning
 
-Compilation of distance measures
+Compilation of distance measures in Python.
+
+## Libraries
+
+* [Scikit-learn (Pairwise Metrics)](https://scikit-learn.org/stable/modules/classes.html#pairwise-metrics)
+* [SciPy (Distance Computations)](https://docs.scipy.org/doc/scipy/reference/spatial.distance.html)
+* [NumPy (Linear Algebra)](https://docs.scipy.org/doc/numpy/reference/routines.linalg.html)
 
 ## List of Distances
 
@@ -23,25 +29,30 @@ Sum of Absolute Difference (SAD)
 
 * L1-norm
 * Manhattan- or Taxicab-norm
+* [Code](distance/SAD.py)
 
 Sum of Squared Difference (SSD)
 
 * Squared L2-norm
 * Euclidean norm
 * Squared Euclidean distance
+* [Code](distance/SSD.py)
 
 Mean Absolute Error (MAE)
 
 * 1/n * Sum of Absolute Difference
+* [Code](distance/MAE.py)
 
 Mean Squared Error (MSE)
 
 * 1/n * Sum of Squared Difference
+* [Code](distance/MSE.py)
 
 Euclidean Distance
 
 * L2-norm
 * Natural distance in a geometric interpretation
+* [Code](distance/Euclidean.py)
 
 Manhattan Distance
 

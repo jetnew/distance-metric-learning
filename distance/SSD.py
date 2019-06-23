@@ -16,7 +16,7 @@ def SSD(y1, y2, verbose=False):
         SSD(y1, y2, verbose=True)
         =>  y1: [1 3 5 7]
             y2: [1 3 7 9]
-            Sum of Absolute Difference: 8
+            Sum of Squared Difference: 8
     """
     y1 = np.asarray(y1)
     y2 = np.asarray(y2)
