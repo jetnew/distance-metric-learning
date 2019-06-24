@@ -22,9 +22,10 @@ def SSD(y1, y2, verbose=False):
     y2 = np.asarray(y2)
     dist = np.sum(np.abs(y1-y2)**2)
     
-    print("y1:", y1)
-    print("y2:", y2)
-    print("Sum of Squared Difference:", dist)
+    if verbose:
+        print("y1:", y1)
+        print("y2:", y2)
+        print("Sum of Squared Difference:", dist)
 
     return dist
 

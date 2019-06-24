@@ -15,7 +15,6 @@ Compilation of distance measures in Python.
 * Mean Absolute Error
 * Mean Squared Error
 * Euclidean Distance
-* Manhattan Distance
 * Chebyshev distance
 * Minkowski Distance
 * Canberra Distance
@@ -30,35 +29,42 @@ Sum of Absolute Differences (SAD)
 * L1-norm
 * Manhattan- or Taxicab-norm
 * Minkowski distance with p=1
-* [Code](distance/SAD.py)
+* Formula: &sum; |<i>p</i><sub>i</sub> - <i>q</i><sub>i</sub>|
+* Code: [SAD.py](distance/SAD.py)
+
+Mean Absolute Error (MAE)
+
+* 1/n * Sum of Absolute Difference
+* Formula: <sup>1</sup>&frasl;<sub>n</sub> * &sum; |<i>p</i><sub>i</sub> - <i>q</i><sub>i</sub>|
+* Code: [MAE.py](distance/MAE.py)
 
 Sum of Squared Differences (SSD)
 
 * Squared L2-norm
 * Euclidean norm
 * Squared Euclidean distance
-* [Code](distance/SSD.py)
-
-Mean Absolute Error (MAE)
-
-* 1/n * Sum of Absolute Difference
-* [Code](distance/MAE.py)
+* Formula: &sum; |<i>p</i><sub>i</sub> - <i>q</i><sub>i</sub>|<sup>2</sup>
+* Code: [SSD.py](distance/SSD.py)
 
 Mean Squared Error (MSE)
 
 * 1/n * Sum of Squared Difference
-* [Code](distance/MSE.py)
+* Formula: <sup>1</sup>&frasl;<sub>n</sub> * &sum; |<i>p</i><sub>i</sub> - <i>q</i><sub>i</sub>|<sup>2</sup>
+* Code: [MSE.py](distance/MSE.py)
 
 Euclidean Distance
 
 * L2-norm
 * Natural distance in a geometric interpretation
-* [Code](distance/Euclidean.py)
+* Formula: &radic; &sum; |<i>p</i><sub>i</sub> - <i>q</i><sub>i</sub>|<sup>2</sup>
+* Code: [Euclidean.py](distance/Euclidean.py)
 
 Chebyshev Distance
 
 * L-infinity norm
 * Minkowski distance with p=infinity
+* Formula: <i>max</i> |<i>p</i><sub>i</sub> - <i>q</i><sub>i</sub>|
+* Code: [Chebyshev.py](distance/Chebyshev.py)
 
 Minkowski Distance
 

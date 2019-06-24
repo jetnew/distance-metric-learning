@@ -1,8 +1,9 @@
 import numpy as np
+from scipy.spatial import distance
 
-def SAD(y1, y2, verbose=False):
+def Chebyshev(y1, y2, verbose=False):
     """
-    Sum of absolute difference between 2 vectors.
+    Chebyshev distance between 2 vectors.
     
     Input:
         y1 - list-like object
@@ -13,24 +14,18 @@ def SAD(y1, y2, verbose=False):
     Example:
         y1 = [1,3,5,7]
         y2 = [1,3,7,9]
-        SAD(y1, y2, verbose=True)
+        Chebyshev(y1, y2, verbose=True)
         =>  y1: [1 3 5 7]
-            y2: [1 3 7 9]
-            Sum of Absolute Difference: 4
+            y2: [1 4 7 10]
+            Chebyshev Distance: 3
     """
     y1 = np.asarray(y1)
     y2 = np.asarray(y2)
-    dist = np.sum(np.abs(y1-y2))
+    dist = distance.chebyshev(y1, y2)
     
     if verbose:
         print("y1:", y1)
         print("y2:", y2)
-        print("Sum of Absolute Difference:", dist)
+        print("Chebyshev Distance:", dist)
 
     return dist
-
-L1_Norm = SAD
-Manhattan_Norm = SAD
-Manhattan = SAD
-Taxicab_Norm = SAD
-Taxicab = SAD

@@ -23,8 +23,9 @@ def MSE(y1, y2, verbose=False):
     y2 = np.asarray(y2)
     dist = mean_squared_error(y1, y2)
     
-    print("y1:", y1)
-    print("y2:", y2)
-    print("Mean Squared Error:", dist)
+    if verbose:
+        print("y1:", y1)
+        print("y2:", y2)
+        print("Mean Squared Error:", dist)
 
     return dist
