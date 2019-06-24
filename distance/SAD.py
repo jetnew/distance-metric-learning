@@ -1,4 +1,5 @@
 import numpy as np
+from Manhattan import Manhattan
 
 def SAD(y1, y2, verbose=False):
     """
@@ -22,12 +23,15 @@ def SAD(y1, y2, verbose=False):
     y2 = np.asarray(y2)
     dist = np.sum(np.abs(y1-y2))
     
-    print("y1:", y1)
-    print("y2:", y2)
-    print("Sum of Absolute Difference:", dist)
+    if verbose:
+        print("y1:", y1)
+        print("y2:", y2)
+        print("Sum of Absolute Difference:", dist)
 
     return dist
 
 L1_Norm = SAD
 Manhattan_Norm = SAD
+Manhattan = SAD
 Taxicab_Norm = SAD
+Taxicab = SAD

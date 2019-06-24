@@ -25,13 +25,14 @@ Compilation of distance measures in Python.
 
 ## Distances
 
-Sum of Absolute Difference (SAD)
+Sum of Absolute Differences (SAD)
 
 * L1-norm
 * Manhattan- or Taxicab-norm
+* Minkowski distance with p=1
 * [Code](distance/SAD.py)
 
-Sum of Squared Difference (SSD)
+Sum of Squared Differences (SSD)
 
 * Squared L2-norm
 * Euclidean norm
@@ -53,12 +54,6 @@ Euclidean Distance
 * L2-norm
 * Natural distance in a geometric interpretation
 * [Code](distance/Euclidean.py)
-
-Manhattan Distance
-
-* L1-norm
-* Sum of Absolute Difference
-* Minkowski distance with p=1
 
 Chebyshev Distance
 
